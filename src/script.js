@@ -1,7 +1,9 @@
 import axios from 'axios';
 import Notiflix from 'https://cdn.skypack.dev/notiflix';
+// Описаний в документації
 import SimpleLightbox from "simplelightbox";
-import 'simplelightbox/dist/simple-lightbox.min.css';
+// Додатковий імпорт стилів
+import "simplelightbox/dist/simple-lightbox.min.css";
 
 const apiKey = '40911756-f65b6d1dd8fe00ae3d3aa7e29';
 const searchForm = document.getElementById('search-form');
@@ -106,6 +108,13 @@ function createImageCard(image) {
     card.appendChild(img);
     card.appendChild(info);
 
+    info.style.display = 'flex';
+    info.style.width = '25%';
+    info.style.gap = '5px';
+
+    info.style.fontSize = '12px';
+    info.style.textAlign = 'center';
+
     return card;
 }
 
@@ -127,3 +136,4 @@ function updateImageWidth() {
         img.style.width = containerWidth + 'px';
     });
 }
+
