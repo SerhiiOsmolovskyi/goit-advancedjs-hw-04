@@ -3,5 +3,5 @@ import{S as h,a as g}from"./assets/vendor-dbddb547.js";import l from"https://cdn
         <p class="info-item"><b>Views:</b> <span>${t.views}</span></p>
         <p class="info-item"><b>Comments:</b> <span>${t.comments}</span></p>
         <p class="info-item"><b>Downloads:</b> <span>${t.downloads}</span></p>
-    `,e.appendChild(o),e.appendChild(n),n.style.display="flex",n.style.width="25%",n.style.gap="5px",n.style.fontSize="12px",n.style.textAlign="center",e}function y(){c.style.display="block"}function w(){c.style.display="none"}function E(){document.querySelectorAll(".photo-card").forEach(e=>{const o=e.querySelector("img"),n=e.clientWidth;o.style.width=n+"px"})}
+    `,e.appendChild(o),e.appendChild(n),n.style.display="flex",n.style.width="25%",n.style.gap="5px",n.style.fontSize="0.6em",n.style.textAlign="center",e}function y(){c.style.display="block"}function w(){c.style.display="none"}function E(){document.querySelectorAll(".photo-card").forEach(e=>{const o=e.querySelector("img"),n=e.clientWidth;o.style.width=n+"px"})}
 //# sourceMappingURL=commonHelpers.js.map
