@@ -1,8 +1,6 @@
 import axios from 'axios';
 import Notiflix from 'https://cdn.skypack.dev/notiflix';
-// Описаний в документації
 import SimpleLightbox from "simplelightbox";
-// Додатковий імпорт стилів
 import "simplelightbox/dist/simple-lightbox.min.css";
 
 const apiKey = '40911756-f65b6d1dd8fe00ae3d3aa7e29';
