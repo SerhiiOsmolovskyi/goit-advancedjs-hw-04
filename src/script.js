@@ -110,7 +110,7 @@ function createImageCard(image) {
     info.style.width = '25%';
     info.style.gap = '5px';
 
-    info.style.fontSize = '12px';
+    info.style.fontSize = '0.6em';
     info.style.textAlign = 'center';
 
     return card;
