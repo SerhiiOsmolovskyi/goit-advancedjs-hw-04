@@ -77,6 +77,11 @@ async function fetchImages(query, page) {
     Notiflix.Notify.success(`Hooray! We found ${totalHits} images.`);
     showLoadMoreButton();
 
+    if (hits.length < 40) {
+      console.log(hits.length);
+      loadMoreBtn.style.display = 'none';
+    }
+
     return hits;
   } catch (error) {
     console.error('Error fetching images:', error);
@@ -97,7 +102,7 @@ function renderImages(images) {
     gallery.appendChild(card);
   });
 
-  showLoadMoreButton();
+  //   showLoadMoreButton();
   updateImageWidth();
 
   lightbox.refresh();
@@ -120,12 +125,13 @@ function createImageCard(image) {
         <p class="info-item"><b>Comments:</b> <span>${image.comments}</span></p>
         <p class="info-item"><b>Downloads:</b> <span>${image.downloads}</span></p>
     `;
-    const link = document.createElement('a');
-    link.href = image.webformatURL; // Додайте цей рядок
-    link.appendChild(img);
+  const link = document.createElement('a');
+  link.href = image.webformatURL; // Додайте цей рядок
+  link.appendChild(img);
 
-    card.appendChild(link);
-link.href = image.webformatURL; 
+  card.appendChild(link);
+
+ link.href = image.webformatURL; 
   link.appendChild(img);
 
   card.appendChild(link);
